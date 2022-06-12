@@ -2,8 +2,9 @@ function time() {
     const time = new Date;
     let hours = time.getHours()
     let am_pm = "AM"
-    if (hours > 12) {
-        hours -= 12;
+   
+    if (hours >= 12) {
+        if (hours != 12) hours -= 12;
         if (hours < 10) {
             document.getElementById('hour-display').innerText = "0" + hours;
         }
