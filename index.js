@@ -49,6 +49,8 @@ function partytime() {
     document.getElementById('lunch-note').innerText = 'Lunch Time : ' + document.getElementById('lunchtime').value
     document.getElementById('nap-note').innerText = 'Nap Time : ' + document.getElementById('naptime').value
     document.getElementById('night-note').innerText = 'Night Time : ' + document.getElementById('nighttime').value
+
+    imgFucn()
 }
 function imgFucn() {
     let tempTime = time()();
